@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# PyCharm project settings (personal)
+.idea/
+
+# Claude Code local config (personal)
+.claude/
