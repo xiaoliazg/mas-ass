@@ -1,0 +1,22 @@
+# mas-ass 核心依赖
+# Python 3.12+
+
+# --- LLM 客户端（vLLM 提供 OpenAI 兼容端点，用 langchain-openai 接入）---
+langchain-openai>=1.2.1
+
+# --- Agent 编排（固定图：节点 + 条件边）---
+langgraph>=1.2.0
+
+# --- MCP（Model Context Protocol）：client SDK + langchain 适配器 ---
+mcp>=1.29.1
+langchain-mcp-adapters>=0.3.2
+
+# --- 配置管理 ---
+pydantic>=2.11.7
+pydantic-settings>=2.10.1
+
+# --- MCP server 端（我们自己写的 web search 小服务）---
+# mcp 官方 SDK 自带 FastMCP，无需额外依赖
+
+# --- DuckDuckGo 免 key 搜索（MCP server 底下真正干活的库）---
+ddgs>=9.14.4
